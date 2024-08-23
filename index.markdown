@@ -6,3 +6,5 @@ layout: page
 ---
 
 # Intro
+
+## Kobling mellem App udvikling og Backend arkitektur
