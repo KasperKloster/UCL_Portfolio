@@ -22,10 +22,10 @@ title: UCL_portfolio
 email: kasperkloster@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   ucl_portfolio
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/UCL_Portfolio" # the subpath of your site, e.g. /blog
 url: "https://kasperkloster.github.io/UCL_Portfolio/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: kasperkloster
+github_username:  kasperkloster
 
 # Build settings
 theme: minima
