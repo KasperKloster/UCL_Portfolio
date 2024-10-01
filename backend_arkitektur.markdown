@@ -25,9 +25,9 @@ Udefra research er valget endt på VIPER.
     <li>Overordnet mappe struktur</li>
 </ul>
 
-Clean architecture er et princip, der går ud på at seperare applikationen i flere lag (seperations of concerns).
-Fordelen her er at vi kan seperare eks. UI fra vores logik, model og database.
-Dette gør det nemmere at vedligholde og teste.
+Clean architecture er et princip, der går ud på at seperare applikationen i flere lag (seperations of concerns).<br/>
+Fordelen her er at vi kan seperare eks. UI fra vores logik, model og database.<br/>
+Dette gør det nemmere at vedligholde og teste.<br/>
 
 I forhold til App udvklingen vil en simpel mappe strukturer kunne se således ud:
 <ul>
@@ -124,7 +124,8 @@ Håndterer navigationen mellem screens.
 Entry point.
 
 ##### Ressourcer
-https://www.objc.io/issues/13-architecture/viper/
-https://medium.com/@sandeepkella23/i-have-explained-what-is-viper-architecture-in-below-everything-briefly-81a6105da6ed
-https://www.youtube.com/watch?v=hFLdbWEE3_Y&t=411s
-https://www.linkedin.com/learning/ios-app-development-design-patterns-for-mobile-architecture
+<b>Architecture</b>https://www.linkedin.com/learning/ios-app-development-design-patterns-for-mobile-architecture<br/>
+<b>VIPER:</b> https://www.objc.io/issues/13-architecture/viper/<br/>
+<b>VIPER:</b>https://medium.com/@sandeepkella23/i-have-explained-what-is-viper-architecture-in-below-everything-briefly-81a6105da6ed<br/>
+<b>VIPER:</b>https://www.youtube.com/watch?v=hFLdbWEE3_Y&t=411s<br/>
+<b>Folder Structure</b>https://medium.com/mop-developers/build-your-first-swiftui-app-part-2-project-architecture-c6e3e62c6457<br/>

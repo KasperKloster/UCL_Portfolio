@@ -31,6 +31,7 @@ permalink: /app_udvikling/
 
 ## Swift
 #### Delmål
+<p>Delmål i forhold til hvad jeg på nuværende tidspunkt tænker jeg skal vide, for at komme i mål med projektet</p>
 <ul>
     <li>Blive komfortabel med syntax</li>    
     <li><a href="#classes_structs_protocols">Klasser, Structs og Protocols</a></li>
@@ -40,6 +41,8 @@ permalink: /app_udvikling/
     <li>User input</li>
     <li>Encapsulation</li>
     <li>Upload .csv</li>
+    <li>Connect til API</li>
+    <li>Core Data</li>
     <li><a href="#best_practices">Best practices</a></li>
 </ul>
 
@@ -99,12 +102,12 @@ Meget lig interfaces i C#.<br/>
 </ul>
 
 #### Ressourcer
-https://docs.swift.org/swift-book/documentation/the-swift-programming-language/
-https://developer.apple.com/tutorials/swiftui
-https://developer.apple.com/design/human-interface-guidelines/designing-for-macos
-https://developer.apple.com/documentation/appkit/
-https://developer.apple.com/videos/play/wwdc2022/110353/
-https://www.youtube.com/watch?v=_U6_l58Cv4E
+<b>Swift:</b>https://docs.swift.org/swift-book/documentation/the-swift-programming-language/<br/>
+<b>Swift Protocols:</b>https://developer.apple.com/videos/play/wwdc2022/110353/<br/>
+<b>SwiftUI:</b>https://developer.apple.com/tutorials/swiftui<br/>
+<b>AppKit</b>https://developer.apple.com/documentation/appkit/<br/>
+<b>UIKit</b>https://www.youtube.com/watch?v=_U6_l58Cv4E<br/>
+<b>Swift:</b>https://developer.apple.com/design/human-interface-guidelines/designing-for-macos<br/>
 
 #### Notes
 Class: NSWindowController. Administrer loading og display af window. Luk det, størrelse og andet til Vinduet som vi ikke vi bekymre os om.
