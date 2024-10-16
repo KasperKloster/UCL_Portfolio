@@ -1,36 +1,11 @@
 ---
 layout: page
-title: App Udvikling
-permalink: /app_udvikling/
+title: Swift
+permalink: /swift/
 ---
-# App Udvikling
+# Swift
 
-## Læringsmål
-
-### Xcode
-<ul>
-    <li>Basic navigation</li>
-</ul>
-
-### SwiftUI
-#### Delmål
-<ul>
-    <li>Views</li>
-    <li>Layout</li>
-    <li>Style</li>
-</ul>
-
-### UIKit
-#### Delmål
-<ul>
-    <li>Views</li>
-    <li>Layout</li>
-    <li>Style</li>    
-</ul>
-
-
-## Swift
-#### Delmål
+## Delmål
 <p>Delmål i forhold til hvad jeg på nuværende tidspunkt tænker jeg skal vide, for at komme i mål med projektet</p>
 <ul>
     <li>Blive komfortabel med syntax</li>    
@@ -38,15 +13,22 @@ permalink: /app_udvikling/
     <li>SwiftUI vs UIKit (Programmatic UI)</li>    
     <li>Functions</li>
     <li>Navigation</li>
-    <li>User input</li>
-    <li>Encapsulation</li>
+    <li>User input</li>    
     <li>Upload .csv</li>
     <li>Connect til API</li>
-    <li>Core Data</li>
+    <li>Test</li>
     <li><a href="#best_practices">Best practices</a></li>
 </ul>
 
-## Klasser, Structs og Protocols
+## SwiftUI
+#### Delmål
+<ul>
+    <li>Views</li>
+    <li>Layout</li>
+    <li>Style</li>
+</ul>
+
+### Klasser, Structs og Protocols
 {: #classes_structs_protocols}
 
 <b>Classes</b><br/>
@@ -77,37 +59,11 @@ Protocoller er et blueprint, om hvilke metoder og properties en klasse eller str
 Der kan derfor ikke oprettes en instans af en protocol.<br/>
 Meget lig interfaces i C#.<br/>
 
-## Best Practices
-{: #best_practices}
 
-<b>Folder names:</b> Skrevet i CamelCase<br/>
-<b>Structures:</b> CamelCase. Ental. Har samme "funktion" som klasser. Men mere simple<br/>
-<b>Variables:</b> lowercase</br>
-
-### API
-#### Delmål
-<ul>
-    <li>Opret forbindelse</li>
-    <li>Create</li>
-    <li>Read</li>
-    <li>Update</li>
-    <li>Delete</li>
-</ul>
-
-### UnitTest
-#### Delmål
-<ul>
-    <li>Lær hvordan testing sker via. Swift</li>
-    <li>Opsæt test</li>
-</ul>
-
-#### Ressourcer
+#### Swift Ressourcer
 <b>Swift:</b>https://docs.swift.org/swift-book/documentation/the-swift-programming-language/<br/>
 <b>Swift Protocols:</b>https://developer.apple.com/videos/play/wwdc2022/110353/<br/>
 <b>SwiftUI:</b>https://developer.apple.com/tutorials/swiftui<br/>
 <b>AppKit</b>https://developer.apple.com/documentation/appkit/<br/>
 <b>UIKit</b>https://www.youtube.com/watch?v=_U6_l58Cv4E<br/>
 <b>Swift:</b>https://developer.apple.com/design/human-interface-guidelines/designing-for-macos<br/>
-
-#### Notes
-Class: NSWindowController. Administrer loading og display af window. Luk det, størrelse og andet til Vinduet som vi ikke vi bekymre os om.

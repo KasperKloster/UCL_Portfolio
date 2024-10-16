@@ -39,8 +39,34 @@ Derudover virker det også til at Apple fokuserer på dette, samt at det er nemm
 <br/><br/>
 Derudover er der også undersøgt hvilke mappestruktur: Layer-based eller Feature-based.<br/>
 Feature-based synes jeg ser mest organiseret ud.
+<br/>
+Hertil er der også lavet wireframes til et overordnet layout, så jeg har noget at gå efter.
 
 #### Swift
 Der er brugt tid på at lære syntax, og blive mere bekvemt med Xcode<br/>
 Derudover er der undersøgt forskellen på SwiftUI, AppKit og storyboards for at finde den udviklingstil, der passer mig bedst.<br/>
 Derudover har jeg så læst på protocols - i Viper snakker lagende sammen via protocols, derfor er forståelse af disse vigtigt.
+
+## Oktober
+Fra teori til hands-on. <br/>
+Der er oprettet et projekt i Xcode, og sat en helt simpel applikation op<br/>
+I første omgang er der kun fokuseret på forståelsen af Viper og data-binding i Swift.<br/>
+
+### Database
+Ingen app uden Database<br/>
+Jeg har undersøgt hvilken database, vil være bedst for projektet.<br/>
+Jeg har valgt Firestore, grundet at jeg kan se det smarte i at man kan have én database på tværs af platforme.<br/>
+Derudover tilbyder den gratis version mere end rigeligt til mit behov - Apples eget kan hurtigt koste.
+<br/><br/>
+Jeg har brugt timer, og med timer mener jeg dage, på at få hul igennem.
+Opsætningen var ret enkelt, men forbindelsen fra App til Firestore gad den bare ikke...
+Jeg fik en fejl at det var min internet forbindelse eller at firewall blokerede firestore.googleapis.com<br/>
+Efter at havde prøvet forskellige forbindelser, kunne jeg udelukke den grund.
+Jeg debuggede, omskrev koden, research... Alt. Intet virkede.
+<br/>
+Jeg opsatte en hurtig side i Javascript, og der fungerede forbindelsen. - Documents blev vist.<br/>
+I Xcode rodede jeg rundt i diverse indstillinger og der fandt jeg to manglende flueben ved Incomming og Outgoing connections
+"Tjek, Tjek" og der var hul igennem!
+
+
+TDD, testing via Swift Tests<br/>
