@@ -61,9 +61,9 @@ Meget lig interfaces i C#.<br/>
 
 
 #### Swift Ressourcer
-<b>Swift:</b>https://docs.swift.org/swift-book/documentation/the-swift-programming-language/<br/>
-<b>Swift Protocols:</b>https://developer.apple.com/videos/play/wwdc2022/110353/<br/>
-<b>SwiftUI:</b>https://developer.apple.com/tutorials/swiftui<br/>
-<b>AppKit</b>https://developer.apple.com/documentation/appkit/<br/>
-<b>UIKit</b>https://www.youtube.com/watch?v=_U6_l58Cv4E<br/>
-<b>Swift:</b>https://developer.apple.com/design/human-interface-guidelines/designing-for-macos<br/>
+<b>Swift:</b> https://docs.swift.org/swift-book/documentation/the-swift-programming-language/<br/>
+<b>Swift Protocols:</b> https://developer.apple.com/videos/play/wwdc2022/110353/<br/>
+<b>SwiftUI:</b> https://developer.apple.com/tutorials/swiftui<br/>
+<b>AppKit</b> https://developer.apple.com/documentation/appkit/<br/>
+<b>UIKit</b> https://www.youtube.com/watch?v=_U6_l58Cv4E<br/>
+<b>Swift:</b> https://developer.apple.com/design/human-interface-guidelines/designing-for-macos<br/>
