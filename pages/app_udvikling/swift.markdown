@@ -12,8 +12,9 @@ permalink: /swift/
     <li><a href="#classes_structs_protocols">Klasser, Structs og Protocols</a></li>
     <li>SwiftUI vs UIKit (Programmatic UI)</li>    
     <li>Functions</li>
+    <li>User input</li>
     <li>Navigation</li>
-    <li>User input</li>    
+    <li>Database</li>        
     <li>Upload .csv</li>
     <li>Connect til API</li>
     <li>Test</li>
@@ -57,7 +58,7 @@ Det gør at de er mere lightweight og har bedre performance.<br/>
 <b>Protocols</b><br/>
 Protocoller er et blueprint, om hvilke metoder og properties en klasse eller struct skal implementere.<br/>
 Der kan derfor ikke oprettes en instans af en protocol.<br/>
-Meget lig interfaces i C#.<br/>
+Lig med interfaces i C#.<br/>
 
 
 #### Swift Ressourcer
@@ -67,3 +68,13 @@ Meget lig interfaces i C#.<br/>
 <b>AppKit</b> https://developer.apple.com/documentation/appkit/<br/>
 <b>UIKit</b> https://www.youtube.com/watch?v=_U6_l58Cv4E<br/>
 <b>Swift:</b> https://developer.apple.com/design/human-interface-guidelines/designing-for-macos<br/>
+
+
+## Navigation
+State.
+Navigate via "pages" som web.
+Navigation via "screens" / NavigationStack. med back button
+
+#### Navigation ressourcer
+https://youtu.be/oxp8Qqwr4AY?si=YAQFnf2fFt-oDhLg
+https://developer.apple.com/documentation/swiftui/migrating-to-new-navigation-types

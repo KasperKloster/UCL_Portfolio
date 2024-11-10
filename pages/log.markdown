@@ -68,5 +68,9 @@ Jeg opsatte en hurtig side i Javascript, og der fungerede forbindelsen. - Docume
 I Xcode rodede jeg rundt i diverse indstillinger og der fandt jeg to manglende flueben ved Incomming og Outgoing connections
 "Tjek, Tjek" og der var hul igennem!
 
+### Connect til API & Shopify GraphQL
+https://wwdcbysundell.com/2021/using-async-await-with-urlsession/
+
+
 
 TDD, testing via Swift Tests<br/>
