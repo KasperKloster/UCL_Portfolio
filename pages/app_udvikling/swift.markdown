@@ -119,7 +119,7 @@ Her har vi en struct: <code>NavigationSplitView</code>, der indeholder en list m
 #### Navigation ressourcer
 <ul>
 <li><a href="https://youtu.be/oxp8Qqwr4AY?si=YAQFnf2fFt-oDhLg<" target="_blank">https://youtu.be/oxp8Qqwr4AY?si=YAQFnf2fFt-oDhLg</a>
-<li><a href="https://developer.apple.com/documentation/swiftui/migrating-to-new-navigation-types<" target="_blank">https://developer.apple.com/documentation/swiftui/migrating-to-new-navigation-types</a>
+<li><a href="https://developer.apple.com/documentation/swiftui/migrating-to-new-navigation-types<" target="_blank">https://developer.apple.com/documentation/swiftui/migrating-to-new-navigation-types</li></a>
 </ul>
 
 ## Database
