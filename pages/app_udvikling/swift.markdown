@@ -6,31 +6,35 @@ permalink: /swift/
 # Swift
 
 ## Delmål
-<p>Delmål i forhold til hvad jeg på nuværende tidspunkt tænker jeg skal vide, for at komme i mål med projektet</p>
+<p>Delmål i forhold til hvad jeg på nuværende tidspunkt tænker jeg skal vide, for at komme i mål med projektet.
+Disse delmål har syntax, så vi kan skrive kode<br/>
+Frontend så bruger kan interagere med applikationen<br/>
+En database til at hente og indsætte data<br/>
+En API til at kommunikere med eksterne services.<br/>
+</p>
 <ul>
-    <li>Blive komfortabel med syntax</li>    
+    <li><a href="#syntax">Blive komfortabel med syntax</a></li>    
     <li><a href="#classes_structs_protocols">Klasser, Structs og Protocols</a></li>
-    <li>SwiftUI vs UIKit (Programmatic UI)</li>    
-    <li>Functions</li>
+    <li><a href="#ui">SwiftUI vs UIKit (Programmatic UI)</a></li>        
     <li>User input</li>
-    <li>Navigation</li>
-    <li>Database</li>        
-    <li>Upload .csv</li>
+    <li>Navigation og States</li>
+    <li>Database</li>            
     <li>Connect til API</li>
     <li>Test</li>
     <li><a href="#best_practices">Best practices</a></li>
 </ul>
 
-## SwiftUI
-#### Delmål
-<ul>
-    <li>Views</li>
-    <li>Layout</li>
-    <li>Style</li>
-</ul>
+## Syntax
+{: #syntax}
+Swift syntaksen er lært mest igennem ved bare at prøve sig af<br/>
+Når vi allerede har en grundlæggende programmeringsviden, er det ikke svært at sætte sig ind i et nyt sprog.<br/>
+Derudover har Xcode en ret god auto-complete, samt en indbygget dokumentation, der er gjort meget brug af.
+Jeg er blevet komfortabel igennem at bygge projektet.
 
 ### Klasser, Structs og Protocols
 {: #classes_structs_protocols}
+Et par ting hvor jeg så at Swift har adskilt sig fra andre sprog er classes, structs og protocols samt guards:<br/>
+Det skal dog nævnes at f.eks protocols er samme som interface i C# - Apple har bare valgt at kalde det noget andet.
 
 <b>Classes</b><br/>
 Classes er reference types<br/>
@@ -60,20 +64,58 @@ Protocoller er et blueprint, om hvilke metoder og properties en klasse eller str
 Der kan derfor ikke oprettes en instans af en protocol.<br/>
 Lig med interfaces i C#.<br/>
 
+<b>Guard</b><br/>
+Guards Er statements ligesom IF statements.<br/>
+Guards er en tand kortere og lettere at læse. Vi kan sætte en variabel, hvis statements er True, hvis det er False eksvikerer koden inde i kroppen.<br/>
+
+I projektet har jeg gjort brug af guards, når jeg henter fra databasen.<br/>
+<code>
+guard let data = document.data() else {
+    print("No data found in document.")    
+}
+</code>
+Her er der sagt: Giv mig data i variablen data, hvis den er False, så print beskeden.
 
 #### Swift Ressourcer
 <b>Swift:</b> https://docs.swift.org/swift-book/documentation/the-swift-programming-language/<br/>
+<b>Swift:</b> https://developer.apple.com/design/human-interface-guidelines/designing-for-macos<br/>
 <b>Swift Protocols:</b> https://developer.apple.com/videos/play/wwdc2022/110353/<br/>
+<b>Guard: </b> https://www.programiz.com/swift-programming/guard-statement<br/>
+
+
+
+## UI
+{: #ui }
+Frontend delen til IOS App<br/>
+Jeg har undersøgt hvilke muligheder der er for at bygge UI - SwiftUI, Storyboards, UIKit<br/>
+Der er lavet et par hurtige projekter (eksperimenter), hvor jeg har prøvet de forskellige af.<br/>
+Jeg fandt flere fordele og ulemper ved alle tre.<br/>
+Jeg er dog endt med at fokuserer på SwiftUI - Apple er kommet med mange updates til dette sprog, og det virker til at de vil have det som deres primære sprog i fremtiden<br/>
+Dertil synes jeg også at ens kode var langt mere overskuelig med SwiftUI.<br/>
+
+
+#### UI Ressourcer
 <b>SwiftUI:</b> https://developer.apple.com/tutorials/swiftui<br/>
 <b>AppKit</b> https://developer.apple.com/documentation/appkit/<br/>
 <b>UIKit</b> https://www.youtube.com/watch?v=_U6_l58Cv4E<br/>
-<b>Swift:</b> https://developer.apple.com/design/human-interface-guidelines/designing-for-macos<br/>
 
 
-## Navigation
-State.
-Navigate via "pages" som web.
-Navigation via "screens" / NavigationStack. med back button
+## Navigation og State
+{: #ui }
+Navigation i IOS skulle jeg lige vende mig til at vride min hjerne omkring.<br/>
+Da jeg har været mest vant til at kode Web (PHP), skulle jeg ind i et nyt koncept - State.<br/>
+<b>State</b> hvilket "stadie" din app er i, i modsætning til webudvikling, så vil appen ikke refreshe, når bruger inteagerer med programmet - Vi har ingen browser til at refreshe siden.<br/>
+<b>Navigationen</b> bruger jeg b.la i menuen:
+<code>
+NavigationSplitView {
+    List{        
+        Section("Products", isExpanded: $isProductsExpanded){
+            NavigationLink("Products", destination: ProductRouter.createModule())
+        }
+    }
+}
+</code>
+Her har vi en struct: <code>NavigationSplitView</code>, der indeholder en list med et <code>NavigationLink</code> - En struct der giver os muligheden for et link, destination er hvor linket skal gå hen. I dette tilfælde er det klassen <code>ProductRouter</code> til metoden <code>createModule</code>
 
 #### Navigation ressourcer
 https://youtu.be/oxp8Qqwr4AY?si=YAQFnf2fFt-oDhLg
