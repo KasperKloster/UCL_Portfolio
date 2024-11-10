@@ -115,11 +115,69 @@ NavigationSplitView {
 }
 </code>
 Her har vi en struct: <code>NavigationSplitView</code>, der indeholder en list med et <code>NavigationLink</code> - En struct der giver os muligheden for et link, destination er hvor linket skal gå hen. I dette tilfælde er det klassen <code>ProductRouter</code> til metoden <code>createModule</code>
+<br/>
+<b>State</b><br/>
+I et view har vi:<br/>
+<code>
+struct CreateIntegrationView: View {
+    @ObservedObject var presenter: CreateIntegrationPresenter    
+    @State private var selectedPlatform: Platform? = nil
+    ...
+    Picker("Choose platform", selection: $selectedPlatform) {        
+        Text("Select platform").tag(nil as Platform?)        
+        ForEach(presenter.platforms) { platform in
+            Text(platform.name).tag(platform as Platform?)
+        }
+    }
+    ...
+    Button(action: {    
+    presenter.createIntegration(
+        ...
+    platform: selectedPlatform)
+    ...
+    .onAppear {
+        Task{
+            do {
+                await presenter.loadPlatforms()
+            } 
+        }
+    }
+</code>
+Her holder vi øje med Presenter (se backend arkitektur / VIPER) igennnem property wrapper @ObservedObject - Vi observerer denne klasse<br/>
+<code>@State private var selectedPlatform: Platform? = nil</code> fortæller koden hvilket stadie vi er i. Default er propertien <code>nil</code><br/>
+<code>Button action...</code> hvad skal der ske, når bruger klikker på en knap - Her sender vi til en metode i presenter.<br>
+<code>.onAppear</code> når siden indlæses - Her vil vi have en async task i en metode i presenter.
+Hopper vi i presenter:<br/>
+<code>
+class CreateIntegrationPresenter : CreateIntegrationPresenterProtocol, ObservableObject {
+    ...    
+    @Published var platforms : [Platform] = []
+    ...
+
+</code>
+Vi nedarver først og fremmest fra ObservableObject, der gør at vi kan observere ændringer i vores view.<br/>
+De ændringer der så skal ske sker igennem property @Published, ObservedObject lytter efter hvornår der er indlæst (published).<br/>
+Det er altså koden, der bliver kørt 
+<code>
+await presenter.loadPlatforms()
+</code>
+og 
+<code>
+ForEach(presenter.platforms) { platform in
+</code>
+Nu kan bruger vælge en platform, hvad de har valgt holder vi øje med ved <code>@State private var selectedPlatform: Platform? = nil</code>
+og vi kan sende det valg videre med knappen.
 
 #### Navigation ressourcer
 <ul>
-<li><a href="https://youtu.be/oxp8Qqwr4AY?si=YAQFnf2fFt-oDhLg<" target="_blank">https://youtu.be/oxp8Qqwr4AY?si=YAQFnf2fFt-oDhLg</a>
-<li><a href="https://developer.apple.com/documentation/swiftui/migrating-to-new-navigation-types<" target="_blank">https://developer.apple.com/documentation/swiftui/migrating-to-new-navigation-types</li></a>
+<li>
+    <b>SwiftUI : NavigationStack</b><a href="https://youtu.be/oxp8Qqwr4AY?si=YAQFnf2fFt-oDhLg<" target="_blank">https://youtu.be/oxp8Qqwr4AY?si=YAQFnf2fFt-oDhLg</a>
+</li>
+
+<li>
+    <b>Swift Navigation</b><a href="https://developer.apple.com/documentation/swiftui/migrating-to-new-navigation-types<" target="_blank">https://developer.apple.com/documentation/swiftui/migrating-to-new-navigation-types
+    </a>
+</li>
 </ul>
 
 ## Database
