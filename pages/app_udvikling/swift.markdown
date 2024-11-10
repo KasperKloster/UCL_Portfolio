@@ -15,12 +15,11 @@ En API til at kommunikere med eksterne services.<br/>
 <ul>
     <li><a href="#syntax">Blive komfortabel med syntax</a></li>    
     <li><a href="#classes_structs_protocols">Klasser, Structs og Protocols</a></li>
-    <li><a href="#ui">SwiftUI vs UIKit (Programmatic UI)</a></li>        
-    <li>User input</li>
-    <li>Navigation og States</li>
-    <li>Database</li>            
-    <li>Connect til API</li>
-    <li>Test</li>
+    <li><a href="#ui">SwiftUI vs UIKit (Programmatic UI)</a></li>            
+    <li><a href="#navigation_state">Navigation, States og User</a></li>
+    <li><a href="#database">Database</a></li>            
+    <li><a href="#api">Connect til API (GET, POST, PUT, DELETE)</a></li>
+    <li><a href="#testing">Testing</a></li>
     <li><a href="#best_practices">Best practices</a></li>
 </ul>
 
@@ -28,8 +27,9 @@ En API til at kommunikere med eksterne services.<br/>
 {: #syntax}
 Swift syntaksen er lært mest igennem ved bare at prøve sig af<br/>
 Når vi allerede har en grundlæggende programmeringsviden, er det ikke svært at sætte sig ind i et nyt sprog.<br/>
-Derudover har Xcode en ret god auto-complete, samt en indbygget dokumentation, der er gjort meget brug af.
-Jeg er blevet komfortabel igennem at bygge projektet.
+Derudover har Xcode en ret god auto-complete, samt en indbygget dokumentation, der er gjort meget brug af.<br/>
+Hertil har jeg også brugt Swift dokumentation til at slå op i<br/>
+Jeg er mest af alt blevet komfortabel med syntax og Xcode igennem at bygge projektet.
 
 ### Klasser, Structs og Protocols
 {: #classes_structs_protocols}
@@ -74,16 +74,15 @@ guard let data = document.data() else {
     print("No data found in document.")    
 }
 </code>
-Her er der sagt: Giv mig data i variablen data, hvis den er False, så print beskeden.
+Her er der sagt: Giv mig data i variablen data, er den False, så print beskeden, ellers forstær og gem variblen.
 
 #### Swift Ressourcer
-<b>Swift:</b> https://docs.swift.org/swift-book/documentation/the-swift-programming-language/<br/>
-<b>Swift:</b> https://developer.apple.com/design/human-interface-guidelines/designing-for-macos<br/>
-<b>Swift Protocols:</b> https://developer.apple.com/videos/play/wwdc2022/110353/<br/>
-<b>Guard: </b> https://www.programiz.com/swift-programming/guard-statement<br/>
-
-
-
+<ul>
+    <li><a href="https://docs.swift.org/swift-book/documentation/the-swift-programming-language/" target="_blank"><b>Swift:</b> https://docs.swift.org/swift-book/documentation/the-swift-programming-language/</a></li>
+    <li><a href="https://developer.apple.com/design/human-interface-guidelines/designing-for-macos" target="_blank"><b>Swift:</b> https://developer.apple.com/design/human-interface-guidelines/designing-for-macos</a></li>
+    <li><a href="https://developer.apple.com/videos/play/wwdc2022/110353/" target="_blank"><b>Swift Protocols:</b> https://developer.apple.com/videos/play/wwdc2022/110353/</a></li>
+    <li><a href="https://www.programiz.com/swift-programming/guard-statement" target="_blank"><b>Guard: </b> https://www.programiz.com/swift-programming/guard-statement</a></li>
+</ul>
 ## UI
 {: #ui }
 Frontend delen til IOS App<br/>
@@ -91,17 +90,17 @@ Jeg har undersøgt hvilke muligheder der er for at bygge UI - SwiftUI, Storyboar
 Der er lavet et par hurtige projekter (eksperimenter), hvor jeg har prøvet de forskellige af.<br/>
 Jeg fandt flere fordele og ulemper ved alle tre.<br/>
 Jeg er dog endt med at fokuserer på SwiftUI - Apple er kommet med mange updates til dette sprog, og det virker til at de vil have det som deres primære sprog i fremtiden<br/>
-Dertil synes jeg også at ens kode var langt mere overskuelig med SwiftUI.<br/>
-
+Dertil synes jeg også at ens kode var langt mere overskuelig at kigge på med SwiftUI.<br/>
 
 #### UI Ressourcer
-<b>SwiftUI:</b> https://developer.apple.com/tutorials/swiftui<br/>
-<b>AppKit</b> https://developer.apple.com/documentation/appkit/<br/>
-<b>UIKit</b> https://www.youtube.com/watch?v=_U6_l58Cv4E<br/>
-
+<ul>
+    <li><a href="https://developer.apple.com/tutorials/swiftui" target="_blank"><b>SwiftUI:</b> https://developer.apple.com/tutorials/swiftui</a></li>
+    <li><a href="https://developer.apple.com/documentation/appkit/"><b>AppKit</b> https://developer.apple.com/documentation/appkit/</a></li>
+    <li><a href="https://www.youtube.com/watch?v=_U6_l58Cv4E"><b>UIKit</b> https://www.youtube.com/watch?v=_U6_l58Cv4E</a></li>
+</ul>
 
 ## Navigation og State
-{: #ui }
+{: #navigation_state }
 Navigation i IOS skulle jeg lige vende mig til at vride min hjerne omkring.<br/>
 Da jeg har været mest vant til at kode Web (PHP), skulle jeg ind i et nyt koncept - State.<br/>
 <b>State</b> hvilket "stadie" din app er i, i modsætning til webudvikling, så vil appen ikke refreshe, når bruger inteagerer med programmet - Vi har ingen browser til at refreshe siden.<br/>
@@ -118,5 +117,16 @@ NavigationSplitView {
 Her har vi en struct: <code>NavigationSplitView</code>, der indeholder en list med et <code>NavigationLink</code> - En struct der giver os muligheden for et link, destination er hvor linket skal gå hen. I dette tilfælde er det klassen <code>ProductRouter</code> til metoden <code>createModule</code>
 
 #### Navigation ressourcer
-https://youtu.be/oxp8Qqwr4AY?si=YAQFnf2fFt-oDhLg
-https://developer.apple.com/documentation/swiftui/migrating-to-new-navigation-types
+<ul>
+<li><a href="https://youtu.be/oxp8Qqwr4AY?si=YAQFnf2fFt-oDhLg<" target="_blank">https://youtu.be/oxp8Qqwr4AY?si=YAQFnf2fFt-oDhLg</a>
+<li><a href="https://developer.apple.com/documentation/swiftui/migrating-to-new-navigation-types<" target="_blank">https://developer.apple.com/documentation/swiftui/migrating-to-new-navigation-types</a>
+</ul>
+
+## Database
+{: #database}
+
+## API
+{: #api}
+
+## Testing
+{: #testing}
