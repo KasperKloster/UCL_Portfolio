@@ -182,9 +182,87 @@ og vi kan sende det valg videre med knappen.
 
 ## Database
 {: #database}
+En applikation kan hurtigt blive kedelig, hvis vi intet data kan håndtere. Derfor ville jeg have en database.<br/>
+Jeg undersøgte først hvilke muligheder vi har, når vi snakker om IOS.<br/>
+Kunne vi bruge MySQL, MongoDB, SQLlite eller andet?<br/>
+Jeg kiggede først ind på Apples egne anbefaling: SwiftData<br/>
+SwiftData har en masse fede features, især i ens models.<br/>
+Den har bare det store problem, at det kun virker til IOS og er derfor ikke særligt velegnet til cross platform og skalerbarhed<br/>
+Medmindre jeg vil risikere at håndtere to databaser, derfor kiggede jeg på alternativer og har samtidig længe tænkt på at lære Firestore<br/>
+Derfor endte valget på Firestore.<br/>
+Firestore er NoSQL database som Google har lavet.<br/>
+Den er især god til at håndtere store mængde af dataer og har en god dokumentation med gode eksempler.<br/>
+NoSQL betyder at vi ikke laver relationship på samme måde, som det gøres med SQL, i stedet kan vi refere til andre dokumenter.<br/>
+Firestore er bygget op med:
+<ul>
+    <li><b>Collections:</b> Det samme som en tabel i SQL</li>
+    <li><b>Documents:</b> En enitity i en collections</li>
+    <li><b>Fields:</b> Hvilke felter et document har</li>
+</ul>
+
+I Appen er der brugt Firestore flere steder, her er et eksempel:<br/>
+I Interactor (Se Viper / Backend Arkitektur), håndterer vi database kald:<br/>
+<code>
+    func fetchPlatformName(platformRef : String) async throws -> String {
+        try await platformManager.getPlatformName(platformRef: platformRef);
+    }
+</code>
+Her sender vi et Async call til platformManager og vil have platform name. Vi har sendt en reference med, som egenligt bare er document navnet, samet ID'et på platform document<br/>
+platformManager ligger i mappen Network/Services/Platform<br/>
+<code>
+    // Fetch the platform name from the Firestore reference
+    func getPlatformName(platformRef : String) async throws -> String
+    {
+        var name : String = ""
+        do {
+            let platformDocument = try await Firestore.firestore().document(platformRef).getDocument()
+            // Check if the document exists and extract the "name" field
+            if let documentData = platformDocument.data() {
+                name = documentData["name"] as? String ?? "Unknown Name"
+            }            
+        } catch{
+            print("Could not get platform name \(error.localizedDescription)")
+        }
+        return name
+    }
+</code>
+Her har vi metoden, der henter navnet, den vigtigste linje er:<br/>
+<code>
+let platformDocument = try await Firestore.firestore().document(platformRef).getDocument()
+</code>
+Her går vi såmændt bare ind og henter det dokument fra referencen. Har vi fået det, kører vi:
+<code>
+if let documentData = platformDocument.data() {
+    name = documentData["name"] as? String ?? "Unknown Name"
+}   
+</code>
+Hvor vi sætter det navn vi returnerer udefra feltet i documentData, og vi sætter en else statement, hvis ikke det eksisterer<br/><br/>
+I starten kæmpede jeg meget med at få Firstore til at virke. Jeg kunne slet ikke få kontakt, kun en heftigt fejlkode.<br/>
+Jeg googlede rundt, men kunne ikke finde særligt mange med samme problem, og dem der havde løst det,for år siden havde ikke skrevet svaret<br/>
+Jeg har brugt timer, og med timer mener jeg dage, på at få hul igennem.
+Opsætningen var ret enkelt, men forbindelsen fra App til Firestore gad den bare ikke...
+Jeg fik en fejl at det var min internet forbindelse eller at firewall blokerede firestore.googleapis.com<br/>
+Efter at havde prøvet forskellige forbindelser, kunne jeg udelukke den grund.
+Jeg debuggede, omskrev koden, research... Alt. Intet virkede.
+<br/>
+Jeg opsatte en hurtig side i Javascript, og der fungerede forbindelsen. - Documents blev vist.<br/>
+I Xcode rodede jeg rundt i diverse indstillinger og der fandt jeg to manglende flueben ved Incomming og Outgoing connections
+"Tjek, Tjek" og der var hul igennem!<br/>
+Derfra har det kørt ganske fejlfrit og lynhurtigt.
+
+<ul>
+<li><b>SwiftData; </b><a href="https://developer.apple.com/xcode/swiftdata/" target="_blank">https://developer.apple.com/xcode/swiftdata/</a>
+    <li><b>Add Data: </b><a href="https://firebase.google.com/docs/firestore/manage-data/add-data" target="_blank">https://firebase.google.com/docs/firestore/manage-data/add-data</a></li>
+</ul>
 
 ## API
 {: #api}
+
+<ul>
+    <li><b>Swift API Calls: </b><a href="https://www.youtube.com/watch?v=ERr0GXqILgc" target="_blank">https://www.youtube.com/watch?v=ERr0GXqILgc</a></li>
+    <li><b>Coding keys: </b><a href="https://developer.apple.com/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types" target="_blank">https://developer.apple.com/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types</a></li>
+</ul>
+
 
 ## Testing
 {: #testing}
