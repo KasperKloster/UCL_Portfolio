@@ -256,7 +256,97 @@ Derfra har det kørt ganske fejlfrit og lynhurtigt.
 </ul>
 
 ## API
-{: #api}
+{: #api} 
+Igennem begge projekter har der været behov for at blive tilkoblet en ekstern API.<br/>
+Begge projekter har gjort brug af Shopify's GraphQL API.<br/> 
+Da jeg har mindre erfaring med GraphQL, i forhold til REST, så jeg her muligheden for at få at fingrene i GraphQL to gange.
+<br/><br/> 
+I første omgang skulle jeg finde ud af hvordan Swift overhovedet tilknytter en API.<br/> 
+Jeg oprettede et nyt Xcode projekt (eksperiment), så jeg kunne teste requests og responses igennem konsolen og ikke skulle compile et projekt, hver gang.
+<br/>
+Igennem en tutorial fandt jeg metoden på hvordan jeg kunne få hul igennem, blandet med min forvejen viden omkring at jeg vidste at der skulle en særlig Http Header sendt med ens request, endte min metode med at se således ud: <br/>
+<code>    
+    private func createRequest() -> URLRequest {
+        var request = URLRequest(url: baseURL)
+        request.httpMethod = "POST"
+        request.addValue("\(accessToken)", forHTTPHeaderField: "X-Shopify-Access-Token")
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        return request
+    }
+</code>
+<br/>
+Nu havde jeg en metode, og et setup der kan håndteres alle requests, hvis jeg bare kalder en særligt query, så GraphQL ved hvad der skal hentes tilbage.
+Derefter hvordan dette response skal håndteres:
+<br/><br/>
+<code>
+    func getProducts() async throws {
+        var request = createRequest()
+        
+        // Define the GraphQL query
+        let query = """
+        {
+            products(first: 10) {
+                edges {
+                    node {
+                        id
+                        title
+                        description
+                    }
+                }
+            }
+        }
+        """
+</code>
+Dernæst var jeg i tvivl om, hvad der skal sendes tilbage til Interactor i forhold til Viper<br/>
+Skulle det være en JSON eller datatypen (I dette tilfælde Products)<br/>
+Jeg har ikke kunne finde noget material på dette, men efter at have tænkt over det, synes jeg det giver mest mening at returnere en liste med Products<br/>
+Dette er grundet et Interactor blot skal hente dataen.. Hvis jeg returenede JSON, skulle det være op til Presenter at konvertere JSON om til Products.<br/>
+Dette synes jeg er et forvirrende ekstra step - Når jeg vil have Products i sidste ende, ser jeg ingen grund til at returene JSON.
+<br/>
+Hvis jeg på et senere tidspunkt skal ændre Products, vil det være op til Presenter at ændre disse.<br/>
+Interactor skal returne så tæt på "rå" data som muligt.
+<br/>
+Herfra var det "blot" at Serialize JSON, og få det til en liste af Products.<br/>
+<br/>
+Det tog mig lang tid at fatte at hvert key, skulle ses som et objekt, hvis jeg skulle returne det som Product.<br/>
+Jeg troede først jeg bare kunne skrive products.metafields.edges<br/>
+Men efter kun at have set løsninger, hvor hvert key blev til en objekt og det samtidig ikke var muligt for mig at iterere igennem, tænker jeg at det er måden at gøre det på.<br/>
+Der er derfor oprettet en særligt entity ShopifyProducts<br/>
+Disse ShopifyProducts, kan jeg så loope igennem og instatiere dem som Products:
+<br/><br/>
+
+<code>
+        do {
+            var products : [Product] = []
+            // Response to string / Debugging purposes
+            // let jsonResponse = try JSONSerialization.jsonObject(with: data, options: []);
+            // print(jsonResponse);
+            
+            // Decode the data into the structured response model
+            let decodedResponse = try JSONDecoder().decode(ShopifyProductResponse.self, from: data)
+            let productResponse = decodedResponse.data.products.edges.map { $0.node }
+            
+            for product in productResponse {
+                // Get properties from base/main product
+                let title : String = product.title
+                let description : String = product.description
+                // Initialize product from each variant (We can get the SKU for each product)
+                for variant in product.variants.edges {
+                    let sku : String = variant.node.sku
+                    let product = Product(sku: sku, name: title, description: description)
+                    // Append to all prodcuts
+                    products.append(product);
+                }
+            }
+            
+            return products;
+            
+            
+        } catch {
+            print("Failed to decode Shopify Product JSON: \(error)");
+            throw error;
+        }
+</code>
 
 <ul>
     <li><b>Swift API Calls: </b><a href="https://www.youtube.com/watch?v=ERr0GXqILgc" target="_blank">https://www.youtube.com/watch?v=ERr0GXqILgc</a></li>
@@ -266,3 +356,4 @@ Derfra har det kørt ganske fejlfrit og lynhurtigt.
 
 ## Testing
 {: #testing}
+<br>

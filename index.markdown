@@ -6,7 +6,7 @@ layout: page
 ---
 
 # Intro
-<b><a href="#f_app">App udvikling</a></b> er valgt grundet at kunne udvikle til alle (Apple) enheder, og prøve noget andet end webudvikling og .NET <br>
+<b><a href="#f_app">App udvikling</a></b> er valgt grundet at kunne udvikle til alle (Apple) enheder, og prøve noget andet end webudvikling, konsol og .NET <br>
 Der vil dog primært være fokus på macOS, i det at projektet mest er beregnet til Desktop<br>
 Derudover giver det også muligheden for at lære et nyt sprog (Swift) og en ny IDE (Xcode)<br>
 <b><a href="#f_back">Backend arkitektur</a></b> er valgt grundet tidligere projekter, der har vokset og jeg ikke engang selv kan finde rundt i det længere<br>
@@ -14,12 +14,13 @@ Derfor har jeg set vigtigheden i at have en klar arkitektur, der følger faste p
 <b><a href="#f_goal">Læringsmål</a></b> Længere ned af siden her, vises mine læringsmål for de to fag.<br>
 Der er to sider for App udvikling og Backend udvikling, hvor at læringsmålene er delt ind til mindre bidder og hertil også reflektioner og læringsressourcer<br>
 Alle mål der har været igennem semesteret, er hvad jeg mener, hvilken viden jeg mangler på nuværende tidspunkt, for at kunne udvikle flere apps i fremtiden<br>
-Læringsprocessen for dette semester er vist på <a href="https://github.com/users/KasperKloster/projects/1/views/2" target="_blank">github projects</a>
-<br>
+<br><br>
 <b>Projekter</b> Der har været to projekter. Et med mit team og et for mig selv. Dette er grundet at IOS udvikling ikke passede til teamets projekt<br>
 Solo projektet viser App udvikling (IOS) og backend arkitektur (VIPER).<br>
 Projekt med team viser forståelsen af backend arkitektur (Clean architecure), samt samarbejde med GitHub.<br>
 De to projekter har været med henblik på samme virksomhed og deres udfordringer.
+<br><br>
+<b><a href="{{ site.baseurl }}/proces">Læringsprocessen</b></a> for dette semester og projekterne er vist her.
 
 ## Kobling mellem App udvikling og Backend arkitektur
 Om vi udvikler en app, website eller console, har arkitekturen en vigtigthed i forhold til:
