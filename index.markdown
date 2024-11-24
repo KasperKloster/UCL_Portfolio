@@ -13,14 +13,14 @@ Derudover giver det også muligheden for at lære et nyt sprog (Swift) og en ny 
 Derfor har jeg set vigtigheden i at have en klar arkitektur, der følger faste principper, og gør at jeg ikke skal opfinde en selv og dokumentere den.<br>
 <b><a href="#f_goal">Læringsmål</a></b> Længere ned af siden her, vises mine læringsmål for de to fag.<br>
 Der er to sider for App udvikling og Backend udvikling, hvor at læringsmålene er delt ind til mindre bidder og hertil også reflektioner og læringsressourcer<br>
-Alle mål der har været igennem semesteret, er hvad jeg mener, hvilken viden jeg mangler på nuværende tidspunkt, for at kunne udvikle flere apps i fremtiden<br>
+Alle mål der har været igennem semesteret, er hvad jeg mener, hvilken viden jeg mangler på nuværende tidspunkt, for at kunne udvikle flere apps i fremtiden
 <br><br>
 <b>Projekter</b> Der har været to projekter. Et med mit team og et for mig selv. Dette er grundet at IOS udvikling ikke passede til teamets projekt<br>
 Solo projektet viser App udvikling (IOS) og backend arkitektur (VIPER).<br>
 Projekt med team viser forståelsen af backend arkitektur (Clean architecure), samt samarbejde med GitHub.<br>
 De to projekter har været med henblik på samme virksomhed og deres udfordringer.
 <br><br>
-<b><a href="{{ site.baseurl }}/proces">Læringsprocessen</b></a> for dette semester og projekterne er vist her.
+<b><a href="{{ site.baseurl }}/proces">Processen og relektionser for dette semester og projekterne er vist her.</a></b>
 
 ## Kobling mellem App udvikling og Backend arkitektur
 Om vi udvikler en app, website eller console, har arkitekturen en vigtigthed i forhold til:
