@@ -25,8 +25,7 @@ Da jeg i min mappe struktur har sat det op igennem features og Viper, har jeg fr
 {: #uger}
 
 ### Uge 33: 11 - 17 august
-<b>Mål:</b>
-<p>Skriv projekt</p>
+<b>Mål:</b><i>Skriv projekt</i>
 <br/>
 <b>Reflektioner:</b>
 <br/>
@@ -39,8 +38,7 @@ Hertil er der blevet lavet et class diagram vha. PlantUML. Dette havde jeg ikke 
 https://plantuml.com/class-diagram
 
 ### Uge 34: 18 - 24 august
-<b>Mål:</b>
-<p>Lær API med DotNET</p>
+<b>Mål:</b> <i>Lær API med DotNET</i>
 <br/>
 <b>Reflektioner</b>
 <br/>
@@ -57,8 +55,7 @@ https://www.youtube.com/watch?v=s1bk-68aB1U<br/>
 https://pages.github.com<br/>
 
 ### Uge 35: 25 - 31 august
-<b>Mål:</b>
-Basis forståelse<br/>
+<b>Mål:</b> <i>Basis forståelse</i><br/>
 Der er opsat Use cases for team projektet vha. PlantUML<br/>
 Jeg er begyndt at læse de første kapitler i Clean Architecture<br/>
 For Solo projektet er der set forskellige videoer omkring Swift, bare for at få en ide om hvordan det ser ud.<br/>
@@ -71,7 +68,7 @@ https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/01344
 https://developer.apple.com/xcode/
 
 ### Uge 36: 1 - 7 september
-<b>Mål: Start på Swift</b>
+<b>Mål: </b><i>Start på Swift</i><br/>
 For solo projektet har jeg nedskrevet krav og ideen projektet er<br/>
 Fra dette optegnet Low-fidelty wireframes, så jeg har et bedre indblik i hvordan projektet skal ende med<br/>
 Derudover har disse krav, og wireframes også givet mig startskuddet til læringsmål for App udvikling.<br/>
@@ -84,8 +81,7 @@ Vi har opsat MosCow rules for team projektet.
 https://rise.articulate.com/share/Ot1EGpvTirjWFnx4a_ElkzGAvkNzDioS#/lessons/GuNx0M2B0h9d015mfsaJedcctcHIXOaa<br/>
 
 ### Uge 37: 8 - 14 september
-<b>Mål: Bedre forståelse for Clean Architecture</b>
-<br/>
+<b>Mål: </b><i>Bedre forståelse for Clean Architecture</i><br/>
 <b>Reflektioner</b>
 Clean Architecture. Jeg har læst videre omkring Clean Architecture, og set grundlæggende videoer omkring Clean Architecture<br/>
 I Solo projeket, er sidste uges low fidelty, blevet lavet om til High fidelty i Figma.<br/>
@@ -96,9 +92,7 @@ https://books.google.dk/books/about/Clean_Architecture.html?id=uGE1DwAAQBAJ&sour
 https://www.youtube.com/watch?v=TQdLgzVk2T8&t=697s
 
 ### Uge 38: 15 - 21 september
-<b>Mål.</b>
-Igang med Swift
-<br/>
+<b>Mål: </b> <i>Igang med Swift</i><br/>
 <b>Reflektioner</b>
 <br/>
 Jeg har opsat et projekt i Xcode. Og har undersøgt forskellen på Storyboards, SwiftUI, og UIKit<br/>
@@ -112,25 +106,25 @@ https://dev.to/marwan8/getting-started-with-the-viper-architecture-pattern-for-i
 https://www.objc.io/issues/13-architecture/viper/<br/>
 
 ### Uge 39: 22 - 28 september
-<b>Mål</b>
-Swift og Viper
+<b>Mål: </b><i>Swift og Viper</i>
 <br/>
 Der er oprettet et projekt med VIPER, der kun er til for at få en bedre forståelse for arkitekturen<br/>
 I Solo projektet er jeg kommet frem til at UIKit ikke er vejen frem, selvom jeg først troede det<br/>
 SwiftUI er langt mere overskueligt, og jeg har en fornemmelse af at Apple vælger dette i fremtiden - Deres dokumentation og andre resourcer på nettet er typisk SwiftUI.<br/>
 Denne uge har jeg fokuseret meget på UIKit, men i næste vil der fokuseres på SwiftUI.<br/>
-For teamp projektet er API router sat op, samt controllers.<br/>
+For team projektet er API router sat op, samt controllers.<br/>
 <b>Reflektioner</b>
 <br/>
 <b>Resourcer</b>
 https://www.youtube.com/watch?v=hFLdbWEE3_Y<br/>
+https://developer.apple.com/tutorials/swiftui/creating-and-combining-views
 
 ### Uge 40: 29 - 5 oktober
-<b>Mål</b>
-SwiftUI.
+<b>Mål: </b><i>SwiftUI.</i><br/>
 Jeg har sat endnu et projekt op i Xcode. Denne gang med udelukkende med SwiftUI.<br/>
 Dertil har jeg også kigget ind på mappe struktur, og kører efter feature based, da jeg synes det passer godt i forhold til FDD, som er hvad jeg kører efter, siden dette er et SOLO projekt.<br/>
-Dette er bare nemmere for mig at skalere og have overblik.
+Dette er bare nemmere for mig at skalere og have overblik.<br/>
+Et main design er sat op i SwiftUI
 <br/>
 <b>Reflektioner</b>
 <br/>
