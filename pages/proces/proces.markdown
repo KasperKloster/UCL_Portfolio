@@ -35,7 +35,9 @@ Der er også skrevet en ordbog, så alle gruppemedlemmer kender til virksomheden
 <br/>
 Hertil er der blevet lavet et class diagram vha. PlantUML. Dette havde jeg ikke kendskab til i forvejen og skulle sætte mig ind i dette.
 <b>Resourcer:</b>
-https://plantuml.com/class-diagram
+<ul>
+    <li>https://plantuml.com/class-diagram</li>
+</ul>
 
 ### Uge 34: 18 - 24 august
 <b>Mål:</b> <i>Lær API med DotNET</i>
@@ -50,9 +52,11 @@ Hertil er der også oprettet dette portfolio, og har skulle finde ud af hvordan 
 I Team projektet er vores projekt sat op med solutions, og jeg har indsat vores entities i Core.
 <br/>
 <b>Resourcer</b>
-https://dummyjson.com/products<br/>
-https://www.youtube.com/watch?v=s1bk-68aB1U<br/>
-https://pages.github.com<br/>
+<ul>
+    <li>https://dummyjson.com/products</li>
+    <li>https://www.youtube.com/watch?v=s1bk-68aB1U</li>
+    <li>https://pages.github.com</li>
+</ul>
 
 ### Uge 35: 25 - 31 august
 <b>Mål:</b> <i>Basis forståelse</i><br/>
@@ -64,8 +68,10 @@ Der er oprettet forskellige småprojekter i Xcode, så jeg lærer at navigere be
 <b>Reflektioner</b>
 <br/>
 <b>Resourcer</b>
-https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164<br/>
-https://developer.apple.com/xcode/
+<ul>
+    <li>https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164</li>
+    <li>https://developer.apple.com/xcode/</li>
+</ul>
 
 ### Uge 36: 1 - 7 september
 <b>Mål: </b><i>Start på Swift</i><br/>
@@ -78,7 +84,10 @@ Vi har opsat MosCow rules for team projektet.
 <b>Reflektioner</b>
 <br/>
 <b>Resourcer</b>
-https://rise.articulate.com/share/Ot1EGpvTirjWFnx4a_ElkzGAvkNzDioS#/lessons/GuNx0M2B0h9d015mfsaJedcctcHIXOaa<br/>
+<ul>
+    <li>https://rise.articulate.com/share/Ot1EGpvTirjWFnx4a_ElkzGAvkNzDioS#/lessons/GuNx0M2B0h9d015mfsaJedcctcHIXOaa</li>
+    <li>https://figma.com</li>
+</ul>
 
 ### Uge 37: 8 - 14 september
 <b>Mål: </b><i>Bedre forståelse for Clean Architecture</i><br/>
@@ -88,8 +97,10 @@ I Solo projeket, er sidste uges low fidelty, blevet lavet om til High fidelty i 
 Derudover har jeg undersøgt hvorvidt Clean Architecture kan bruges i forhold til IOS udvikling - Dette ser ikke ud til at være tilfældet.
 <br/>
 <b>Resourcer</b>
-https://books.google.dk/books/about/Clean_Architecture.html?id=uGE1DwAAQBAJ&source=kp_book_description&redir_esc=y<br/>
-https://www.youtube.com/watch?v=TQdLgzVk2T8&t=697s
+<ul>
+    <li>https://books.google.dk/books/about/Clean_Architecture.html?id=uGE1DwAAQBAJ&source=kp_book_description&redir_esc=y</li>
+    <li>https://www.youtube.com/watch?v=TQdLgzVk2T8&t=697s</li>
+</ul>
 
 ### Uge 38: 15 - 21 september
 <b>Mål: </b> <i>Igang med Swift</i><br/>
@@ -100,10 +111,12 @@ Derudover har jeg fundet ud af at Clean Architecture ikke kan direkte oversætte
 Der kan bruges MVVM, men fra tidligere projekter bryder jeg mig ikke om MVVM. I stedet har jeg fundet VIPER - Denne arkitektur vil jeg fokusere på
 <br/>
 <b>Resourcer</b>
-https://www.youtube.com/watch?v=_U6_l58Cv4E<br/>
-https://medium.com/@dickareynaldisiahaan/viper-architecture-in-swift-building-robust-ios-apps-ed30d673d459<br/>
-https://dev.to/marwan8/getting-started-with-the-viper-architecture-pattern-for-ios-application-development-2oee<br/>
-https://www.objc.io/issues/13-architecture/viper/<br/>
+<ul>
+    <li>https://www.youtube.com/watch?v=_U6_l58Cv4E</li>
+    <li>https://medium.com/@dickareynaldisiahaan/viper-architecture-in-swift-building-robust-ios-apps-ed30d673d459</li>
+    <li>https://dev.to/marwan8/getting-started-with-the-viper-architecture-pattern-for-ios-application-development-2oee</li>
+    <li>https://www.objc.io/issues/13-architecture/viper/</li>
+<ul>
 
 ### Uge 39: 22 - 28 september
 <b>Mål: </b><i>Swift og Viper</i>
@@ -116,8 +129,10 @@ For team projektet er API router sat op, samt controllers.<br/>
 <b>Reflektioner</b>
 <br/>
 <b>Resourcer</b>
-https://www.youtube.com/watch?v=hFLdbWEE3_Y<br/>
-https://developer.apple.com/tutorials/swiftui/creating-and-combining-views
+<ul>
+    <li>https://www.youtube.com/watch?v=hFLdbWEE3_Y</li>
+    <li>https://developer.apple.com/tutorials/swiftui/creating-and-combining-views</li>
+</ul>
 
 ### Uge 40: 29 - 5 oktober
 <b>Mål: </b><i>SwiftUI.</i><br/>
