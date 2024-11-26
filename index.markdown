@@ -20,11 +20,9 @@ Solo projektet viser App udvikling (IOS) og backend arkitektur (VIPER).<br>
 Projekt med team viser forståelsen af backend arkitektur (Clean architecure), samt samarbejde med GitHub.<br>
 De to projekter har været med henblik på samme virksomhed og deres udfordringer.
 <br><br>
-<b>Links</b>
+<b>Links</b><br>
 <b><a href="{{ site.baseurl }}/proces">Processen og relektionser for dette semester og projekterne er vist her.</a></b><br>
-
 <b><a href="https://github.com/KasperKloster/PackPim" target="_blank">Solo projekt kode: https://github.com/KasperKloster/PackPim</a></b>
-
 <b><a href="https://github.com/DMOoF23-S4-Team2/PMS-WePack" target="_blank">Team projekt kode: https://github.com/DMOoF23-S4-Team2/PMS-WePack</a></b>
 
 ## Kobling mellem App udvikling og Backend arkitektur
