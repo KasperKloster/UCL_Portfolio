@@ -64,13 +64,12 @@ I Team projektet er vores projekt sat op med solutions, og jeg har indsat vores 
 
 ### Uge 35: 25 - 31 august
 <b>Mål:</b> <i>Basis forståelse</i><br/>
+<b>Reflektioner</b>
+<br/>
 Der er opsat Use cases for team projektet vha. PlantUML<br/>
 Jeg er begyndt at læse de første kapitler i Clean Architecture<br/>
 For Solo projektet er der set forskellige videoer omkring Swift, bare for at få en ide om hvordan det ser ud.<br/>
 Der er oprettet forskellige småprojekter i Xcode, så jeg lærer at navigere bedre og igen for en bedre forståelse.
-<br/>
-<b>Reflektioner</b>
-<br/>
 <b>Resourcer</b>
 <ul>
     <li>https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164</li>
@@ -79,14 +78,13 @@ Der er oprettet forskellige småprojekter i Xcode, så jeg lærer at navigere be
 
 ### Uge 36: 1 - 7 september
 <b>Mål: </b><i>Start på Swift</i><br/>
+<b>Reflektioner</b>
+<br/>
 For solo projektet har jeg nedskrevet krav og ideen projektet er<br/>
 Fra dette optegnet Low-fidelty wireframes, så jeg har et bedre indblik i hvordan projektet skal ende med<br/>
 Derudover har disse krav, og wireframes også givet mig startskuddet til læringsmål for App udvikling.<br/>
 For Team projektet er databasen sat op, og attributter er tilføjet entities.<br/>
 Vi har opsat MosCow rules for team projektet.
-<br/>
-<b>Reflektioner</b>
-<br/>
 <b>Resourcer</b>
 <ul>
     <li>https://rise.articulate.com/share/Ot1EGpvTirjWFnx4a_ElkzGAvkNzDioS#/lessons/GuNx0M2B0h9d015mfsaJedcctcHIXOaa</li>
@@ -130,13 +128,13 @@ Der kan bruges MVVM, men fra tidligere projekter bryder jeg mig ikke om MVVM. I 
 ### Uge 39: 22 - 28 september
 <b>Mål: </b><i>Swift og Viper</i>
 <br/>
+<b>Reflektioner</b>
+<br/>
 Der er oprettet et projekt med VIPER, der kun er til for at få en bedre forståelse for arkitekturen<br/>
 I Solo projektet er jeg kommet frem til at UIKit ikke er vejen frem, selvom jeg først troede det<br/>
 SwiftUI er langt mere overskueligt, og jeg har en fornemmelse af at Apple vælger dette i fremtiden - Deres dokumentation og andre resourcer på nettet er typisk SwiftUI.<br/>
 Denne uge har jeg fokuseret meget på UIKit, men i næste vil der fokuseres på SwiftUI.<br/>
 For team projektet er API router sat op, samt controllers.<br/>
-<b>Reflektioner</b>
-<br/>
 <b>Resourcer</b>
 <ul>
     <li>https://www.youtube.com/watch?v=hFLdbWEE3_Y</li>
@@ -145,14 +143,14 @@ For team projektet er API router sat op, samt controllers.<br/>
 
 ### Uge 40: 29 - 5 oktober
 <b>Mål: </b><i>SwiftUI.</i><br/>
+<br/>
+<b>Reflektioner</b>
+<br/>
 Jeg har sat endnu et projekt op i Xcode. Denne gang med udelukkende med SwiftUI.<br/>
 Dertil har jeg også kigget ind på mappe struktur, og kører efter feature based, da jeg synes det passer godt i forhold til FDD, som er hvad jeg kører efter, siden dette er et SOLO projekt.<br/>
 Dette er bare nemmere for mig at skalere og have overblik.<br/>
 Et main design er sat op i SwiftUI<br/>
 Jeg har set ind på Guards i swift.
-<br/>
-<b>Reflektioner</b>
-<br/>
 <b>Resourcer</b>
 <ul>
     <li>https://www.programiz.com/swift-programming/guard-statement</li>
