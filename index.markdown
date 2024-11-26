@@ -40,8 +40,9 @@ En macOS fuld CRUD app, der fungerer lokalt (Ikke deployed til Apple Store), der
 Hertil få en viden og praktisk via god arkitektur.
 <br/>
 Projektet er delt op igennem delmål (For Swift og Backend arkitektur), jeg skal lære for at kunne udvikle en applikation.<br/>
-De resourcer som jeg har brugt vil være listet op nederest på siderne.<br/>
-Jeg har løbende skrevet længere logbog omkring, hvad jeg har gennemgået og hvilke udfordringer der har været.
+De resourcer som jeg har brugt vil være listet op nederest<br/>
+Der er skrevet hvad der er gennemgået <a href="{{ site.baseurl }}/process">fra uge til uge her</a>.<br/>
+Derodver også en <a href="{{ site.baseurl }}/log">længere log</a>, hvis jeg følte at skrive mere uddybende 
 
 ## Læringsmål
 {: #f_goal}
