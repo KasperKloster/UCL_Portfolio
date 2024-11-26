@@ -6,7 +6,13 @@ permalink: /backend_arkitektur/
 # Backend Udvikling
 
 ## Intro
-
+Jeg vil gerne have god arkitektur og stuktur i projektet<br/>
+<br/>
+I min tidligere erfaring og projekter, er det hurtigt blevet et virvar af rodet koden, som jeg ikke engang selv kan finde rundt i efter et år<br/>
+Der bliver fokuseret på Clean architecture i team projektet, og, efter research, VIPER for solo projektet.
+<br/>
+<a href="{{ site.baseurl }}/viper/">Der er skrevet om Viper her</a><br/>
+<a href="{{ site.baseurl }}/clean_architecture">Der er skrevet om Clean architecture her</a><br/>
 
 ## Delmål
 <ul>

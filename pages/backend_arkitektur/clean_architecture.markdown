@@ -8,6 +8,7 @@ permalink: /clean_architecture/
 ### Delmål
 <ul>
     <li>Overordnet forståelse</li>
+    <li>Forstå hvert lag</li>
     <li>Overordnet mappe struktur</li>
 </ul>
 

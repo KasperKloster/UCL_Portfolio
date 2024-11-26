@@ -8,7 +8,7 @@ Før at jeg mener at jeg har lært udvikling, vil jeg gerne have en færdig IOS 
 <br/>
 Projektet der bliver lavet sammen med Teamet bliver til et website<br/>
 Derfor udvikler jeg en native App sideløbende - Det er egentlig derfor jeg tager denne uddannelse.<br/>
-Læringsmålene for faget ses herunder. Den viden jeg har opsnappet igennem semesteret, er vist på <a href="{{ site.baseurl }}/swift">siden Swift</a>, hvor at læringsmålene er dele yderelige op.
+Læringsmålene for faget ses herunder. Den viden jeg har opsnappet igennem semesteret, er vist på <a href="{{ site.baseurl }}/swift">siden Swift</a>, hvor at læringsmålene er dele yderlige op.
 
 ### Læringsmål: Fag: App Udvikling
 #### Viden - Den studerende har viden om
