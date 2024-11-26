@@ -21,6 +21,7 @@ En API til at kommunikere med eksterne services.<br/>
     <li><a href="#api">Connect til API (GET, POST, PUT, DELETE)</a></li>
     <li><a href="#testing">Testing</a></li>
     <li><a href="#best_practices">Best practices</a></li>
+    <li>Læs CSV</li>
 </ul>
 
 ## Syntax
@@ -83,6 +84,7 @@ Her er der sagt: Giv mig data i variablen data, er den False, så print beskeden
     <li><a href="https://developer.apple.com/videos/play/wwdc2022/110353/" target="_blank"><b>Swift Protocols:</b> https://developer.apple.com/videos/play/wwdc2022/110353/</a></li>
     <li><a href="https://www.programiz.com/swift-programming/guard-statement" target="_blank"><b>Guard: </b> https://www.programiz.com/swift-programming/guard-statement</a></li>
 </ul>
+
 ## UI
 {: #ui }
 Frontend delen til IOS App<br/>
@@ -170,14 +172,14 @@ og vi kan sende det valg videre med knappen.
 
 #### Navigation ressourcer
 <ul>
-<li>
-    <b>SwiftUI : NavigationStack</b><a href="https://youtu.be/oxp8Qqwr4AY?si=YAQFnf2fFt-oDhLg<" target="_blank">https://youtu.be/oxp8Qqwr4AY?si=YAQFnf2fFt-oDhLg</a>
-</li>
+    <li>
+        <b>SwiftUI : NavigationStack</b><a href="https://youtu.be/oxp8Qqwr4AY?si=YAQFnf2fFt-oDhLg<" target="_blank">https://youtu.be/oxp8Qqwr4AY?si=YAQFnf2fFt-oDhLg</a>
+    </li>
 
-<li>
-    <b>Swift Navigation</b><a href="https://developer.apple.com/documentation/swiftui/migrating-to-new-navigation-types<" target="_blank">https://developer.apple.com/documentation/swiftui/migrating-to-new-navigation-types
-    </a>
-</li>
+    <li>
+        <b>Swift Navigation</b><a href="https://developer.apple.com/documentation/swiftui/migrating-to-new-navigation-types<" target="_blank">https://developer.apple.com/documentation/swiftui/migrating-to-new-navigation-types
+        </a>
+    </li>
 </ul>
 
 ## Database
@@ -251,7 +253,7 @@ I Xcode rodede jeg rundt i diverse indstillinger og der fandt jeg to manglende f
 Derfra har det kørt ganske fejlfrit og lynhurtigt.
 
 <ul>
-<li><b>SwiftData; </b><a href="https://developer.apple.com/xcode/swiftdata/" target="_blank">https://developer.apple.com/xcode/swiftdata/</a>
+    <li><b>SwiftData; </b><a href="https://developer.apple.com/xcode/swiftdata/" target="_blank">https://developer.apple.com/xcode/swiftdata/</a></li>
     <li><b>Add Data: </b><a href="https://firebase.google.com/docs/firestore/manage-data/add-data" target="_blank">https://firebase.google.com/docs/firestore/manage-data/add-data</a></li>
 </ul>
 
@@ -356,4 +358,4 @@ Disse ShopifyProducts, kan jeg så loope igennem og instatiere dem som Products:
 
 ## Testing
 {: #testing}
-<br>
+XCTest vs Swift Testing
