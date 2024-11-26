@@ -247,14 +247,12 @@ De endelige læringsmål er blevet skrevet mere "korrekt"
 <b>Mål: </b><i>GraphQL, Portfolio og læringsmål</i><br/>
 Jeg har nu fået hul igennem fra Shopify, til App, til Firestore - Det er fedt!<br/>
 <br/>
+<b>Reflektioner</b>
+<br/>
 I team projeketet er der oprettet metoder fra JSON string til List, og omvendt - Dette gør at vi kan håndtere JSON responses og indsætte/læse data<br/>
 <br/>
 Læringsmålene og portfolio er blevet gennemset af lærer, og jeg har modtaget feedback som jeg ser ind til<br/>
 Portfolio er blevet opdateret igen, igen.
-<br/>
-<b>Reflektioner</b>
-<br/>
-<b>Resourcer</b>
 
 ### Uge 47: 18 - 24 november
 <b>Mål: </b><i>Dokumentation</i><br/>
@@ -263,15 +261,13 @@ Portfolio er blevet opdateret igen, igen.
 <br/>
 Der er skrevet dokumentation for backend arkitekturen i team projektet.<br/>
 Der er ryddet op I mit swift projekt, og har gennemgået koden slavisk, så jeg er helt med på arkitekturen og Swift<br/>
-<b>Resourcer</b>
 
 ### Uge 48: 25 november - 1 december
 <b>Mål:</b>
 <p>Snart slut</p>
-Der er ved at blive lagt sidste hånd på diverse projekter.<br/>
-Portfolio bliver skrevet færdigt, de forskellige Github repos bliver merget og gjort public.<br/>
-Der bliver gjort klar til aflevering.
 <br/>
 <b>Reflektioner</b>
 <br/>
-<b>Resourcer</b>
+Der er ved at blive lagt sidste hånd på diverse projekter.<br/>
+Portfolio bliver skrevet færdigt, de forskellige Github repos bliver merget og gjort public.<br/>
+Der bliver gjort klar til aflevering.
