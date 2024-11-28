@@ -33,14 +33,14 @@ Da jeg i min mappe struktur har sat det op igennem features og Viper, har jeg fr
 <br/>
 <b>Reflektioner:</b>
 <br/>
-Ved vores første SRUM møde, er der blevet gennemgået problemstillingen for virksomheden og projektbeskrivelsen blev skrevet.
+Ved vores første SCRUM møde, er der blevet gennemgået problemstillingen for virksomheden og projektbeskrivelsen blev skrevet.
 <br/>
 Der er også skrevet en ordbog, så alle gruppemedlemmer kender til virksomhedens jargon.
 <br/>
 Hertil er der blevet lavet et class diagram vha. PlantUML. Dette havde jeg ikke kendskab til i forvejen og skulle sætte mig ind i dette.
 <b>Resourcer:</b>
 <ul>
-    <li>https://plantuml.com/class-diagram</li>
+    <li><a href="https://plantuml.com/class-diagram" target="_blank">PlantUML Class Diagram</a></li>
 </ul>
 
 ### Uge 34: 18 - 24 august
@@ -57,9 +57,9 @@ I Team projektet er vores projekt sat op med solutions, og jeg har indsat vores 
 <br/>
 <b>Resourcer</b>
 <ul>
-    <li>https://dummyjson.com/products</li>
-    <li>https://www.youtube.com/watch?v=s1bk-68aB1U</li>
-    <li>https://pages.github.com</li>
+    <li><a href="https://dummyjson.com/products" target="_blank">Dummy JSON</a></li>
+    <li><a href="https://www.youtube.com/watch?v=s1bk-68aB1U" target="_blank">YouTube: DotNET API</a></li>
+    <li><a href="https://pages.github.com" target="_blank">GitHub Pages</a></li>
 </ul>
 
 ### Uge 35: 25 - 31 august
@@ -72,8 +72,8 @@ For Solo projektet er der set forskellige videoer omkring Swift, bare for at få
 Der er oprettet forskellige småprojekter i Xcode, så jeg lærer at navigere bedre og igen for en bedre forståelse.
 <b>Resourcer</b>
 <ul>
-    <li>https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164</li>
-    <li>https://developer.apple.com/xcode/</li>
+    <li><a href="https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164" target="_blank">Clean Architecture (Amazon)</a></li>
+    <li><a href="https://developer.apple.com/xcode/" target="_blank">Apple Xcode (IDE)</a></li>
 </ul>
 
 ### Uge 36: 1 - 7 september
@@ -87,8 +87,8 @@ For Team projektet er databasen sat op, og attributter er tilføjet entities.<br
 Vi har opsat MosCow rules for team projektet.
 <b>Resourcer</b>
 <ul>
-    <li>https://rise.articulate.com/share/Ot1EGpvTirjWFnx4a_ElkzGAvkNzDioS#/lessons/GuNx0M2B0h9d015mfsaJedcctcHIXOaa</li>
-    <li>https://figma.com</li>
+    <li><a href="https://rise.articulate.com/share/Ot1EGpvTirjWFnx4a_ElkzGAvkNzDioS#/lessons/GuNx0M2B0h9d015mfsaJedcctcHIXOaa" target="_blank">Wireframes</a></li>
+    <li><a href="https://figma.com" target="_blank">Figma</a></li>
 </ul>
 
 ### Uge 37: 8 - 14 september
@@ -100,8 +100,8 @@ Derudover har jeg undersøgt hvorvidt Clean Architecture kan bruges i forhold ti
 <br/>
 <b>Resourcer</b>
 <ul>
-    <li>https://books.google.dk/books/about/Clean_Architecture.html?id=uGE1DwAAQBAJ&source=kp_book_description&redir_esc=y</li>
-    <li>https://www.youtube.com/watch?v=TQdLgzVk2T8&t=697s</li>
+    <li><a href="https://books.google.dk/books/about/Clean_Architecture.html?id=uGE1DwAAQBAJ&source=kp_book_description&redir_esc=y" target="_blank">Clean Architecture (Google Books)</a></li>
+    <li><a href="https://www.youtube.com/watch?v=TQdLgzVk2T8&t=697s" target="_blank">YouTube - Clean Architecture</a></li>
 </ul>
 
 ### Uge 38: 15 - 21 september
@@ -123,7 +123,7 @@ Der kan bruges MVVM, men fra tidligere projekter bryder jeg mig ikke om MVVM. I 
     <li>https://www.objc.io/issues/13-architecture/viper/</li>
     <li>https://www.linkedin.com/pulse/difference-between-class-struct-swift-simplified-jay-tillu-pnikf/</li>
     <li>https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/</li>
-<ul>
+</ul>
 
 ### Uge 39: 22 - 28 september
 <b>Mål: </b><i>Swift og Viper</i>
@@ -210,7 +210,7 @@ Hertil er der også kigget ind på GraphQL, og få sendt data til Shopify.
 Derudover er dette portfolio også blevet refactoret.
 <b>Resourcer</b>
 <ul>
-    <li>https://firebase.google.com/docs/firestore/quickstart</li>
+    <li><a href="https://firebase.google.com/docs/firestore/quickstart" target="_blank">https://firebase.google.com/docs/firestore/quickstart</a></li>
 </ul>
 
 ### Uge 44: 28 - 3 november
@@ -223,7 +223,7 @@ I Swift er der blevet set ind på hvordan API kald i swift fungerer, og har fåe
 <br/>
 <b>Resourcer</b>
 <ul>
-    <li>https://www.youtube.com/watch?v=ERr0GXqILgc</li>
+    <li><a href="https://www.youtube.com/watch?v=ERr0GXqILgc" target="_blank">https://www.youtube.com/watch?v=ERr0GXqILgc</a></li>
 </ul>
 
 ### Uge 45: 4 - 10 november
@@ -238,7 +238,7 @@ De endelige læringsmål er blevet skrevet mere "korrekt"
 <br/>
 <b>Resourcer</b>
 <ul>
-    <li>https://developer.apple.com/swift/blog/?id=37</li>
+    <li><a href="https://developer.apple.com/swift/blog/?id=37" target="_blank">https://developer.apple.com/swift/blog/?id=37</a></li>
 </ul>
 
 ### Uge 46: 11 - 17 november
@@ -261,8 +261,7 @@ Der er skrevet dokumentation for backend arkitekturen i team projektet.<br/>
 Der er ryddet op I mit swift projekt, og har gennemgået koden slavisk, så jeg er helt med på arkitekturen og Swift<br/>
 
 ### Uge 48: 25 november - 1 december
-<b>Mål:</b>
-<p>Snart slut</p>
+<b>Mål: </b><i>Afslutning</i><br/>
 <br/>
 <b>Reflektioner</b>
 <br/>
